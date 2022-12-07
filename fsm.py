@@ -1,36 +1,87 @@
 from transitions.extensions import GraphMachine
 
-from utils import send_text_message
+from utils import send_text_message, is_mami, compare, is_kazuya
+
+love_name = "mami"
 
 
 class TocMachine(GraphMachine):
     def __init__(self, **machine_configs):
         self.machine = GraphMachine(model=self, **machine_configs)
 
-    def is_going_to_state1(self, event):
+    # love_consultant
+    def is_going_to_love_consultant(self, event):
         text = event.message.text
-        return text.lower() == "go to state1"
+        return text == "戀愛相談"
 
-    def is_going_to_state2(self, event):
+    def on_enter_love_consultant(self, event):
+        print("I'm entering love_consultant")
+        reply_token = event.reply_token
+        send_text_message(reply_token,
+                          "こんにちわ~マミちゃんですっヾ(〃^∇^)ﾉ\n好きな人の名前を入力してください。\n您好！我是Mami！\n請輸入心儀對象的姓名：")
+
+    # help
+    def is_going_to_help(self, event):
         text = event.message.text
-        return text.lower() == "和也"
+        return text.lower() == "help"
 
-    def on_enter_state1(self, event):
-        print("I'm entering state1")
+    def on_enter_help(self, event):
+        print("I'm entering help")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "Trigger state1")
+        send_text_message(reply_token, "輸入「戀愛相談」，我會為您做戀愛匹配度分析喲～")
         self.go_back()
 
-    def on_exit_state1(self):
-        print("Leaving state1")
+    # mad
+    def is_going_to_mad(self, event):
+        text = event.message.text
+        return is_kazuya(text)
 
-    def on_enter_state2(self, event):
-        print("I'm entering state2")
+    def on_enter_mad(self, event):
+        print("I'm entering help")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "幹你娘和也這個廢物媽的怎麼才剛分手就有新歡我肏他媽的咧")
+        send_text_message(reply_token, "幹X娘和也這個廢物的怎麼才剛被我甩掉就有新歡我肏他X的咧")
         self.go_back()
 
-    def on_exit_state2(self):
-        print("Leaving state2")
+    # acquire_name
+    def is_going_to_acquire_name(self, event):
+        text = event.message.text
+        global love_name
+        love_name = '' + text
+        if is_mami(text) or is_kazuya(text):
+            return False
+        return True
+
+    def on_enter_acquire_name(self, event):
+        print("I'm entering acquire_name")
+
+        reply_token = event.reply_token
+        num1 = compare(event.source.user_id, love_name)
+        if num1 == 0:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，強烈建議您趕緊轉換目標，免得受到太大的打擊喲^_^\nhttps://dict.revised.moe.edu.tw/dictView.jsp?ID=59617&la=0&powerMode=0"
+        elif 0 < num1 <= 20:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，建議您趕緊下船，免得迷失在茫茫大海中喲^_^！"
+        elif 20 < num1 <= 40:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，處於不高的數值，建議您試探一下對方的喜好，抓住對方的好感喲！"
+        elif 40 < num1 <= 60:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，可喜可賀！"
+        elif 60 < num1 <= 80:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，說不定稍微注意一下自身的形象，就能夠勾住對方的心囉！"
+        elif 80 < num1 < 100:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，看來您需要鼓起勇氣，踏出最需勇氣的那一步囉^_^！"
+        else:
+            mess = "您與心上人的匹配度是：" + str(num1) + "%，給我原地結婚！！！"
+
+        send_text_message(reply_token, mess)
+        self.go_back()
+
+    def is_going_to_pride(self, event):
+        text = event.message.text
+        return is_mami(text)
+
+    def on_enter_pride(self, event):
+        print("I'm entering pride")
+        reply_token = event.reply_token
+        send_text_message(reply_token, "啊咧？可是我現在不想交男朋友耶 凸^_^凸")
+        self.go_back()
