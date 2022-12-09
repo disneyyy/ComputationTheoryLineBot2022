@@ -1,7 +1,8 @@
 import os
 import re
 from linebot import LineBotApi, WebhookParser
-from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
+from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, TemplateSendMessage, \
+    ButtonsTemplate
 
 channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
 
@@ -14,8 +15,7 @@ def send_text_message(reply_token, text):
 
 
 def send_image_message(reply_token, url):
-    line_bot_api = LineBotApi(
-        'ulHXhTUhvVRiyWI1RptU4vXRvsCGAM/xbIjXuiswUaFx/H66XkoQCEBKOkpESnCD8qpgwIQu590JUA4GhcLQ1B65a4nHD4a770LZB9VqluslKKR8OpPZR9Nn4yweNqz2a+CzaP81CBfjK/ny+QZ4VAdB04t89/1O/w1cDnyilFU=')
+    line_bot_api = LineBotApi(channel_access_token)
     message = ImageSendMessage(
         original_content_url=url,
         preview_image_url=url
@@ -54,7 +54,7 @@ def compare(uid, love_name):
     num = num.replace('\'', "")
     num = num.replace('\\', "")
     res = 0
-    num = cjk_cleaner(num)
+    # num = cjk_cleaner(num)
     for i in range(len(num)):
         c = "" + str(num[i])
         if c.isalpha() or c.isnumeric():
@@ -69,6 +69,22 @@ def is_command(text):
     if text == "戀愛相談" or is_kazuya(text) or text.lower() == "help":
         return True
     return False
+
+
+def send_button_message(reply_token, title, text, btn, url):
+    line_bot_api = LineBotApi(channel_access_token)
+    message = TemplateSendMessage(
+        alt_text='button template',
+        template=ButtonsTemplate(
+            title=title,
+            text=text,
+            thumbnail_image_url=url,
+            actions=btn
+        )
+    )
+    line_bot_api.reply_message(reply_token, message)
+
+    return "OK"
 
 
 """
