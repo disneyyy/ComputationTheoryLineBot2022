@@ -14,7 +14,7 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["user", "love_consultant", "help", "acquire_name", "mad", "pride"],
+    states=["user", "love_consultant", "help", "acquire_name", "mad", "pride", "idle"],
     transitions=[
         {
             "trigger": "advance",
@@ -30,7 +30,7 @@ machine = TocMachine(
         },
         {
             "trigger": "advance",
-            "source": ["user", "love_consultant", "help", "acquire_name"],
+            "source": ["user", "love_consultant"],
             "dest": "mad",
             "conditions": "is_going_to_mad",
         },
@@ -46,7 +46,13 @@ machine = TocMachine(
             "dest": "pride",
             "conditions": "is_going_to_pride",
         },
-        {"trigger": "go_back", "source": ["mad", "love_consultant", "help", "acquire_name", "pride"], "dest": "user"},
+        {
+            "trigger": "advance",
+            "source": "user",
+            "dest": "idle",
+            "conditions": "is_going_to_idle",
+        },
+        {"trigger": "go_back", "source": ["mad", "love_consultant", "help", "acquire_name", "pride", "idle"], "dest": "user"},
     ],
     initial="user",
     auto_transitions=False,
@@ -136,3 +142,4 @@ def show_fsm():
 if __name__ == "__main__":
     port = os.environ.get("PORT", 8000)
     app.run(host="0.0.0.0", port=port, debug=True)
+    machine.get_graph().draw("fsm.png", prog="dot", format="png")

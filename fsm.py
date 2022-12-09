@@ -1,6 +1,9 @@
+import random
+
 from transitions.extensions import GraphMachine
 
-from utils import send_text_message, is_mami, compare, is_kazuya
+from utils import send_text_message, is_mami, compare, is_kazuya, is_command, send_image_message
+
 
 love_name = "mami"
 
@@ -20,16 +23,24 @@ class TocMachine(GraphMachine):
         send_text_message(reply_token,
                           "こんにちわ~マミちゃんですっヾ(〃^∇^)ﾉ\n好きな人の名前を入力してください。\n您好！我是Mami！\n請輸入心儀對象的姓名：")
 
-    # help
-    def is_going_to_help(self, event):
+    # idle
+    def is_going_to_idle(self, event):
         text = event.message.text
-        return text.lower() == "help"
+        if is_command(text):
+            return False
+        return True
 
-    def on_enter_help(self, event):
-        print("I'm entering help")
+    def on_enter_idle(self, event):
+        print("I'm entering idle")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "輸入「戀愛相談」，我會為您做戀愛匹配度分析喲～")
+        num = random.randint(2, 4)
+        if num == 2:
+            send_image_message(reply_token, "https://i.imgur.com/GctntXv.jpg")
+        elif num == 3:
+            send_image_message(reply_token, "https://i.imgur.com/hHJHXDI.jpg")
+        elif num == 4:
+            send_image_message(reply_token, "https://i.imgur.com/uAQQ1ab.jpg")
         self.go_back()
 
     # mad
@@ -38,10 +49,18 @@ class TocMachine(GraphMachine):
         return is_kazuya(text)
 
     def on_enter_mad(self, event):
-        print("I'm entering help")
-
+        print("I'm entering mad")
+        url1 = 'https://i.imgur.com/23fugco.jpg'
+        url2 = 'https://i.imgur.com/qgVR9fM.jpg'
         reply_token = event.reply_token
-        send_text_message(reply_token, "幹X娘和也這個廢物的怎麼才剛被我甩掉就有新歡我肏他X的咧")
+        num = random.randint(1, 3)
+        if num == 1:
+            send_text_message(reply_token, "幹X娘和也這個廢物的怎麼才剛被我甩掉就有新歡我肏他X的咧")
+        elif num == 2:
+            send_image_message(reply_token, url1)
+        elif num == 3:
+            send_image_message(reply_token, url2)
+
         self.go_back()
 
     # acquire_name
@@ -59,7 +78,8 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         num1 = compare(event.source.user_id, love_name)
         if num1 == 0:
-            mess = "您與心上人的匹配度是：" + str(num1) + "%，強烈建議您趕緊轉換目標，免得受到太大的打擊喲^_^\nhttps://dict.revised.moe.edu.tw/dictView.jsp?ID=59617&la=0&powerMode=0"
+            mess = "您與心上人的匹配度是：" + str(
+                num1) + "%，強烈建議您趕緊轉換目標，免得受到太大的打擊喲^_^\nhttps://dict.revised.moe.edu.tw/dictView.jsp?ID=59617&la=0&powerMode=0"
         elif 0 < num1 <= 20:
             mess = "您與心上人的匹配度是：" + str(num1) + "%，建議您趕緊下船，免得迷失在茫茫大海中喲^_^！"
         elif 20 < num1 <= 40:
@@ -84,4 +104,15 @@ class TocMachine(GraphMachine):
         print("I'm entering pride")
         reply_token = event.reply_token
         send_text_message(reply_token, "啊咧？可是我現在不想交男朋友耶 凸^_^凸")
+        self.go_back()
+
+    def is_going_to_help(self, event):
+        text = event.message.text
+        return text.lower() == "help"
+
+    def on_enter_help(self, event):
+        print("I'm entering idle")
+        reply_token = event.reply_token
+        send_text_message(reply_token,
+                      "こんにちわ~マミちゃんですっヾ(〃^∇^)ﾉ\n您好！我是Mami！\n輸入「戀愛相談」，我會為您做戀愛匹配度分析喲～")
         self.go_back()

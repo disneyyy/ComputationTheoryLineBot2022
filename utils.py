@@ -1,8 +1,7 @@
 import os
 import re
 from linebot import LineBotApi, WebhookParser
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
-
+from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 
 channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
 
@@ -12,6 +11,19 @@ def send_text_message(reply_token, text):
     line_bot_api.reply_message(reply_token, TextSendMessage(text=text))
 
     return "OK"
+
+
+def send_image_message(reply_token, url):
+    line_bot_api = LineBotApi(
+        'ulHXhTUhvVRiyWI1RptU4vXRvsCGAM/xbIjXuiswUaFx/H66XkoQCEBKOkpESnCD8qpgwIQu590JUA4GhcLQ1B65a4nHD4a770LZB9VqluslKKR8OpPZR9Nn4yweNqz2a+CzaP81CBfjK/ny+QZ4VAdB04t89/1O/w1cDnyilFU=')
+    message = ImageSendMessage(
+        original_content_url=url,
+        preview_image_url=url
+    )
+    line_bot_api.reply_message(reply_token, message)
+
+    return "OK"
+
 
 def cjk_cleaner(string):
     # Keep CJS Characters, Latin Letters and Digits (listed above)
@@ -51,6 +63,13 @@ def compare(uid, love_name):
     res = res % 101
     print(res)
     return res
+
+
+def is_command(text):
+    if text == "戀愛相談" or is_kazuya(text) or text.lower() == "help":
+        return True
+    return False
+
 
 """
 def send_image_url(id, img_url):
