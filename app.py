@@ -14,13 +14,31 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["user", "love_consultant", "help", "acquire_name", "mad", "pride", "idle"],
+    states=["user", "love_consultant", "help", "analyze", "mad", "pride", "idle", "pair", "gender", "get_pic"],
     transitions=[
         {
             "trigger": "advance",
-            "source": "user",
+            "source": ["user", "gender", "help"],
             "dest": "love_consultant",
             "conditions": "is_going_to_love_consultant",
+        },
+        {
+            "trigger": "advance",
+            "source": ["user", "help"],
+            "dest": "pair",
+            "conditions": "is_going_to_pair",
+        },
+        {
+            "trigger": "advance",
+            "source": ["pair", "gender"],
+            "dest": "gender",
+            "conditions": "is_going_to_gender",
+        },
+        {
+            "trigger": "advance",
+            "source": "gender",
+            "dest": "get_pic",
+            "conditions": "is_going_to_get_pic",
         },
         {
             "trigger": "advance",
@@ -30,15 +48,15 @@ machine = TocMachine(
         },
         {
             "trigger": "advance",
-            "source": ["user", "love_consultant"],
+            "source": ["user", "love_consultant", "pair", "gender"],
             "dest": "mad",
             "conditions": "is_going_to_mad",
         },
         {
             "trigger": "advance",
-            "source": "love_consultant",
-            "dest": "acquire_name",
-            "conditions": "is_going_to_acquire_name",
+            "source": ["love_consultant", "gender"],
+            "dest": "analyze",
+            "conditions": "is_going_to_analyze",
         },
         {
             "trigger": "advance",
@@ -52,7 +70,7 @@ machine = TocMachine(
             "dest": "idle",
             "conditions": "is_going_to_idle",
         },
-        {"trigger": "go_back", "source": ["mad", "love_consultant", "help", "acquire_name", "pride", "idle"], "dest": "user"},
+        {"trigger": "go_back", "source": ["mad", "love_consultant", "help", "analyze", "pride", "idle", "pair", "gender", "get_pic"], "dest": "user"},
     ],
     initial="user",
     auto_transitions=False,
