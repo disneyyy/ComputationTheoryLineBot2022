@@ -182,7 +182,7 @@ class TocMachine(GraphMachine):
                 text='戀人配對'
             ),
         ]
-        send_button_message(reply_token, '需要幫忙嗎？！', mess, btn, "https://i.imgur.com/hHJHXDI.jpg")
+        send_button_message(reply_token, '需要幫忙嗎？', mess, btn, "https://i.imgur.com/hHJHXDI.jpg")
         self.go_back()
 
     def is_going_to_pair(self, event):
