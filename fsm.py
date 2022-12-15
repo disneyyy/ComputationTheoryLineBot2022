@@ -11,7 +11,7 @@ from picture import get_pic
 love_name = "mami"
 
 user_gender = "男"
-request_url = ""
+request_url = "none"
 last_com = "戀愛相談"
 
 #male_pic = get_pic("男")
@@ -243,7 +243,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_get_pic(self, event):
         text = event.message.text
-        return text == "獲取圖片" and last_com == "戀人配對"
+        return text == "獲取圖片" and last_com == "戀人配對" and request_url != "none"
 
     def on_enter_get_pic(self, event):
         print("I'm entering get_pic")
