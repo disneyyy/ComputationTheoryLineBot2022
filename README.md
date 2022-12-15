@@ -60,25 +60,38 @@
   alt="pair_boy1"
   title="pair_boy1"
   style="display: inline-block; margin: 0 auto; height: 600px">  
-  * 選擇或輸入`匹配度分析`，Mami會為您與此對象進行**戀愛相談**分析  
-    <img
+  * 選擇或輸入`匹配度分析`，Mami會為您與此對象進行*戀愛相談*分析  
+  <img
   src="/img/pair_boy2.jpg"
   alt="pair_boy2"
   title="pair_boy2"
-  style="display: inline-block; margin: 0 auto; width: 400px">
+  style="display: inline-block; margin: 0 auto; width: 400px">  
     * 進行*戀愛相談*分析後，選擇或輸入`再試一次`，戀人配對功能從頭開始  
-  * 選擇或輸入`再試一次`，  
+  * 選擇或輸入`再試一次`，Mami會依據您上次選的性別再次挑選一個對象  
+  <img
+  src="/img/pair_again.jpg"
+  alt="pair_again"
+  title="pair_again"
+  style="display: inline-block; margin: 0 auto; width: 400px">  
   * 無論是否有進行*戀愛相談*分析，選擇或輸入`獲取圖片`，Mami會傳給您此對象之圖片供您下載  
   <img
   src="/img/pair_boy3.jpg"
   alt="pair_boy3"
   title="pair_boy3"
   style="display: inline-block; margin: 0 auto; width: 400px">
-  （圖片）  
+  <img
+  src="/img/pair_download.jpg"
+  alt="pair_download"
+  title="pair_download"
+  style="display: inline-block; margin: 0 auto; width: 400px">  
   * 當然Mami也會為女性尋找對象  
   （圖片）  
   * 輸入`戀人配對`後，若輸入`男`、`女`以外的回應，Mami會生氣  
-  （圖片）  
+  <img
+  src="/img/pair_except.jpg"
+  alt="pair_except"
+  title="pair_except"
+  style="display: inline-block; margin: 0 auto; width: 400px">  
 * **idle** `其他指令`  
   進入*Idle*狀態的Mami會隨機回覆一則訊息（共5種回覆）  
   ![idle](./img/idle.png)
