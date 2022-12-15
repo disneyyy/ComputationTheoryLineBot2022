@@ -14,6 +14,10 @@ user_gender = "男"
 request_url = ""
 last_com = "戀愛相談"
 
+#male_pic = get_pic("男")
+#female_pic = get_pic("女")
+
+
 class TocMachine(GraphMachine):
     def __init__(self, **machine_configs):
         self.machine = GraphMachine(model=self, **machine_configs)
@@ -98,7 +102,7 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         global last_com
         global love_name
-        if last_com == "戀愛配對":
+        if last_com == "戀人配對":
             num1 = compare(event.source.user_id, request_url)
         else:
             num1 = compare(event.source.user_id, love_name)
@@ -123,13 +127,26 @@ class TocMachine(GraphMachine):
         else:
             url = urusai
             mess = "您與心上人的匹配度是：" + str(num1) + "%，給我原地結婚。"
-        btn = [
-            MessageTemplateAction(
-                label='再試一次',
-                text=last_com
-            ),
-        ]
-        send_button_message(reply_token, '結果出爐啦！', mess, btn, url)
+        if last_com == "戀人配對":
+            btn = [
+                MessageTemplateAction(
+                    label='再試一次',
+                    text=last_com
+                ),
+                MessageTemplateAction(
+                    label='獲取圖片',
+                    text='獲取圖片'
+                ),
+            ]
+            send_button_message(reply_token, '結果出爐啦！', mess, btn, url)
+        else:
+            btn = [
+                MessageTemplateAction(
+                    label='再試一次',
+                    text=last_com
+                ),
+            ]
+            send_button_message(reply_token, '結果出爐啦！', mess, btn, url)
         self.go_back()
 
     def is_going_to_pride(self, event):
@@ -154,15 +171,15 @@ class TocMachine(GraphMachine):
     def on_enter_help(self, event):
         print("I'm entering help")
         reply_token = event.reply_token
-        mess = "輸入「戀愛相談」，我會為您做戀愛匹配度分析喲～"+"\n輸入「戀愛配對」，我會為幫您找對象，並且回傳照片給您喔！"
+        mess = "輸入「戀愛相談」，我會為您做戀愛匹配度分析喲～"+"\n輸入「戀人配對」，我會為幫您找對象，並且回傳照片給您喔！"
         btn = [
             MessageTemplateAction(
                 label='戀愛相談',
                 text='戀愛相談'
             ),
             MessageTemplateAction(
-                label='戀愛配對',
-                text='戀愛配對'
+                label='戀人配對',
+                text='戀人配對'
             ),
         ]
         send_button_message(reply_token, '需要幫忙嗎？！', mess, btn, "https://i.imgur.com/hHJHXDI.jpg")
@@ -170,12 +187,12 @@ class TocMachine(GraphMachine):
 
     def is_going_to_pair(self, event):
         text = event.message.text
-        return text == "戀愛配對"
+        return text == "戀人配對"
 
     def on_enter_pair(self, event):
         print("I'm entering pair")
         global last_com
-        last_com = "戀愛配對"
+        last_com = "戀人配對"
         reply_token = event.reply_token
         btn = [
             MessageTemplateAction(
@@ -226,7 +243,7 @@ class TocMachine(GraphMachine):
 
     def is_going_to_get_pic(self, event):
         text = event.message.text
-        return text == "獲取圖片"
+        return text == "獲取圖片" and last_com == "戀人配對"
 
     def on_enter_get_pic(self, event):
         print("I'm entering get_pic")

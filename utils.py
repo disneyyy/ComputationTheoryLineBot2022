@@ -66,7 +66,7 @@ def compare(uid, love_name):
 
 
 def is_command(text):
-    if text == "戀愛相談" or is_kazuya(text) or text.lower() == "help" or text == "戀愛配對":
+    if text == "戀愛相談" or is_kazuya(text) or text.lower() == "help" or text == "戀人配對":
         return True
     return False
 

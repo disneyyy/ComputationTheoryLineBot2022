@@ -36,7 +36,7 @@ machine = TocMachine(
         },
         {
             "trigger": "advance",
-            "source": "gender",
+            "source": ["gender", "user"],
             "dest": "get_pic",
             "conditions": "is_going_to_get_pic",
         },
