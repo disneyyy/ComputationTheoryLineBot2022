@@ -28,7 +28,9 @@
   src="/img/help1.jpg"
   alt="help1"
   title="help1"
-  style="display: inline-block; margin: 0 auto; width: 400px">
+  style="display: inline-block; margin: 0 auto; width: 400px">  
+  * 點選`戀愛相談`，Mami會為您進行戀愛諮商  
+  * 點選`戀人配對`，Mami會為您尋找對象  
 * love_consultant `戀愛相談`  
   
 * pair `戀人配對`
