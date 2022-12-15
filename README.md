@@ -38,8 +38,18 @@
 ## 彩蛋
 
 * mad  
-  在任何時候輸入`和也`、`木之下和也`、`Kazuya`，Mami會進入*mad*狀態，會揭露她的本性
-* pride  
+  在任何時候輸入`和也`、`木之下和也`、`Kazuya`，Mami會進入*mad*狀態，會揭露她的本性  
+  <img
+  src="/img/kazuya.jpg"
+  alt="help1"
+  title="help1"
+  style="display: inline-block; margin: 0 auto; width: 300px">
+  <img
+  src="/img/kazuay.jpg"
+  alt="help1"
+  title="help1"
+  style="display: inline-block; margin: 0 auto; width: 300px">
+  * pride  
   在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您
 
 
