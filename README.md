@@ -24,7 +24,11 @@
   * 輸入`獲取圖片`，即可以索取前一次`戀人配對`結果的照片
   * 輸入其他指令，Mami會進入*Idle*狀態，會隨機回覆一則訊息
 * help  
-![help1](./img/help1.jpg)
+<img
+  src="/img/help1.jpg"
+  alt="help1"
+  title="help1"
+  style="display: inline-block; margin: 0 auto; width: 400px">
 * love_consultant `戀愛相談`  
   
 * pair `戀人配對`
