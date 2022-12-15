@@ -131,7 +131,7 @@
   title="pair_download_pic"
   style="display: inline-block; margin: 0 auto; width: 600px">  
   * 當然Mami也會為女性尋找對象  
-  （圖片）  
+  ![girl2](./img/girl2.png)  
   * 輸入`戀人配對`後，若輸入`男`、`女`以外的回應，Mami會生氣  
   <img
   src="/img/pair_except.jpg"
@@ -145,11 +145,11 @@
 
 * **mad**  `和也` `木之下和也` `Kazuya`  
   在任何時候輸入`和也`、`木之下和也`、`Kazuya`，Mami會進入*mad*狀態，會揭露她的本性（共4種回覆，如左圖）  
-  ![idle](./img/kazuya_all.png)  
+  ![kazuya_all](./img/kazuya_all.png)  
   **（紅色塗鴉為骯髒字眼，慎入！！！）**  
 * **pride**  
   在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您（共2種回覆）  
-  ![idle](./img/pride.png)
+  ![pride](./img/pride.png)
 
 * **其他**
   * 若前一次服務項目非`戀人配對`，輸入`獲取圖片`時Mami會進入*idle*狀態  
