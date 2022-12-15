@@ -95,7 +95,16 @@
   title="love_consultant (2)"
   style="display: inline-block; margin: 0 auto; height: 600px">  
   * 每支帳號的結果皆獨立  
-  （圖片）  
+  <img
+  src="/img/result_same01.png"
+  alt="result_same01"
+  title="result_same01"
+  style="display: inline-block; margin: 0 auto; width: 600px">
+  <img
+  src="/img/result_same03.png"
+  alt="result_same02"
+  title="result_same02"
+  style="display: inline-block; margin: 0 auto; width: 600px">  
 * **pair** `戀人配對`
   * 輸入`戀愛相談`後，再選擇或輸入您的性別，Mami就會使用**網路爬蟲**幫您尋找一名對象  
   <img
@@ -166,6 +175,6 @@
   （圖片）  
   * 相談（そうだん、soudan）為日文「諮詢」的意思  
 > 作者：成功大學資訊工程學系113級 鄭鈞智  
-> 最後編輯： 2022/12/15 17:26
+> 最後編輯： 2022/12/16 00:59
 
 
