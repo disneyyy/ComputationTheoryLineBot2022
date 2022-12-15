@@ -1,7 +1,7 @@
 # Line Bot Nanami Mami
 
 ## 角色介紹
-![Mami](./img/Mami_profile.jpg)
+![Mami](./img/Mami_profile2.png)
 ### 七海麻美
 生日：11月13日  
 星座：天蠍座  
