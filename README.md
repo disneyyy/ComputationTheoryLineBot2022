@@ -35,19 +35,46 @@
   
 * pair `戀人配對`
 
+* idle `其他指令`  
+  進入*Idle*狀態的Mami會隨機回覆一則訊息喔（共5種回覆）  
+  <img
+  src="/img/idle1.jpg"
+  alt="idle1"
+  title="idle1"
+  style="display: inline-block; margin: 0 auto; height: 200px">
+  <img
+  src="/img/idle2.jpg"
+  alt="idle2"
+  title="idle2"
+  style="display: inline-block; margin: 0 auto; height: 200px">
+  <img
+  src="/img/idle3.jpg"
+  alt="idle3"
+  title="idle3"
+  style="display: inline-block; margin: 0 auto; height: 200px">
+  <img
+  src="/img/idle4.jpg"
+  alt="idle4"
+  title="idle4"
+  style="display: inline-block; margin: 0 auto; height: 300px">
+  <img
+  src="/img/idle5.jpg"
+  alt="idle5"
+  title="idle5"
+  style="display: inline-block; margin: 0 auto; height: 300px">
 ## 彩蛋
 
 * mad  
   在任何時候輸入`和也`、`木之下和也`、`Kazuya`，Mami會進入*mad*狀態，會揭露她的本性  
   <img
-  src="/img/kazuya.jpg"
-  alt="help1"
-  title="help1"
+  src="/img/kazuya1.jpg"
+  alt="kazuya1"
+  title="kazuya1"
   style="display: inline-block; margin: 0 auto; width: 300px">
   <img
-  src="/img/kazuay.jpg"
-  alt="help1"
-  title="help1"
+  src="/img/kazuya2.jpg"
+  alt="kazuya2"
+  title="kazuya2"
   style="display: inline-block; margin: 0 auto; width: 300px">
   * pride  
   在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您
