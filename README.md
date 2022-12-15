@@ -34,7 +34,55 @@
 * **love_consultant** `戀愛相談`  
   * 輸入`戀愛相談`後，再輸入欲匹配之人名，Mami就會幫您算出您與心上人的匹配度  
   * Mami的表情與建議會依匹配度的大小有所變化  
-  （圖片）  
+    * 0%：*是我的錯嗎？*  
+    <img
+    src="/img/result00.jpg"
+    alt="result00"
+    title="result00"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **不是你的錯，只是對方完全不適合你**  
+    * 1~20%：*尷尬卻不失禮的微笑*  
+    <img
+    src="/img/result20.jpg"
+    alt="result20"
+    title="result20"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **雖然機率不是0，但還是很低**  
+    * 21~40%：*嗯...？*  
+    <img
+    src="/img/result40.jpg"
+    alt="result40"
+    title="result40"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **好像還行，但沒有很高**  
+    * 41~60%：*嗯！*  
+    <img
+    src="/img/result60.jpg"
+    alt="result60"
+    title="result60"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **至少有一半左右的機會了，加油！**  
+    * 61~80%：*欸？*  
+    <img
+    src="/img/result80.jpg"
+    alt="result80"
+    title="result80"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **這個機會頗高喔，看起來該準備衝一波了**  
+    * 81~99%：*恭喜！！！*  
+    <img
+    src="/img/result99.jpg"
+    alt="result99"
+    title="result99"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **衝下去就對了，絕對不會後悔！**  
+    * 100%：*煩死了...*  
+    <img
+    src="/img/result100.jpg"
+    alt="result100"
+    title="result100"
+    style="display: inline-block; margin: 0 auto; width: 300px">  
+    **雖然您看起來是找到適合的對象了，但想要拆散所有情侶的Mami似乎在蠢蠢欲動...**  
   * 同一支帳號輸入同一個名字的結果會相同（左圖於14:29進行測試，右圖於14:31進行測試）  
   <img
   src="/img/love_consultant.jpg"
