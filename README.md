@@ -145,25 +145,28 @@
 
 * **mad**  `和也` `木之下和也` `Kazuya`  
   在任何時候輸入`和也`、`木之下和也`、`Kazuya`，Mami會進入*mad*狀態，會揭露她的本性（共4種回覆，如左圖）  
-  <img
-  src="/img/kazuya1.jpg"
-  alt="kazuya1"
-  title="kazuya1"
-  style="display: inline-block; margin: 0 auto; width: 300px">
-  <img
-  src="/img/kazuya2.jpg"
-  alt="kazuya2"
-  title="kazuya2"
-  style="display: inline-block; margin: 0 auto; width: 300px">  
+  ![idle](./img/kazuya_all.png)  
   **（紅色塗鴉為骯髒字眼，慎入！！！）**  
 * **pride**  
-  在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您（共2種回覆）
+  在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您（共2種回覆）  
+  ![idle](./img/pride.png)
 
 * **其他**
   * 若前一次服務項目非`戀人配對`，輸入`獲取圖片`時Mami會進入*idle*狀態  
-  （圖片）  
+  <img
+  src="/img/easter_egg0.jpg"
+  alt="easter_egg0"
+  title="easter_egg0"
+  style="display: inline-block; margin: 0 auto; width: 400px">  
   * 相談（そうだん、soudan）為日文「諮詢」的意思  
+  * 幫我測試的朋友的反應  
+  <img
+  src="/img/easter_egg1.png"
+  alt="easter_egg1"
+  title="easter_egg1"
+  style="display: inline-block; margin: 0 auto; width: 400px">  
+  
 > 作者：成功大學資訊工程學系113級 鄭鈞智  
-> 最後編輯： 2022/12/16 01:14
+> 最後編輯： 2022/12/16 01:39
 
 
