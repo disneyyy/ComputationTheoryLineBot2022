@@ -1,4 +1,4 @@
-# Line Bot Nanami Mami
+# Line Bot Nanami Mami the Love Consultant
 
 ## 角色介紹
 ![Mami](./img/Mami_profile2.png)
@@ -149,24 +149,28 @@
   **（紅色塗鴉為骯髒字眼，慎入！！！）**  
 * **pride**  
   在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您（共2種回覆）  
-  ![pride](./img/pride.png)
+  <img
+  src="/img/pride.png"
+  alt="pride"
+  title="pride"
+  style="display: inline-block; margin: 0 auto; width: 800px">  
 
 * **其他**
+  * 相談（そうだん、soudan）為日文「諮詢」的意思  
   * 若前一次服務項目非`戀人配對`，輸入`獲取圖片`時Mami會進入*idle*狀態  
   <img
   src="/img/easter_egg0.jpg"
   alt="easter_egg0"
   title="easter_egg0"
   style="display: inline-block; margin: 0 auto; width: 400px">  
-  * 相談（そうだん、soudan）為日文「諮詢」的意思  
   * 幫我測試的朋友的反應  
   <img
   src="/img/easter_egg1.png"
   alt="easter_egg1"
   title="easter_egg1"
-  style="display: inline-block; margin: 0 auto; width: 400px">  
+  style="display: inline-block; margin: 0 auto; width: 800px">  
   
 > 作者：成功大學資訊工程學系113級 鄭鈞智  
-> 最後編輯： 2022/12/16 01:48
+> 最後編輯： 2022/12/16 01:54
 
 
