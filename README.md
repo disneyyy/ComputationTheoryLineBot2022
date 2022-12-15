@@ -16,7 +16,11 @@
 
 ## 功能
 * **歡迎訊息**  
-  （歡迎訊息截圖）
+<img
+  src="/img/welcom.jpg"
+  alt="welcome"
+  title="welcome"
+  style="display: inline-block; margin: 0 auto; width: 400px">  
 * **user**
   * 輸入`help`，Mami會貼心的告訴您她提供的服務項目  
   * 輸入`戀愛相談`，Mami會為您進行戀愛諮商
@@ -85,15 +89,10 @@
     **雖然您看起來是找到適合的對象了，但想要拆散所有情侶的Mami似乎在蠢蠢欲動...**  
   * 同一支帳號輸入同一個名字的結果會相同（左圖於14:29進行測試，右圖於14:31進行測試）  
   <img
-  src="/img/love_consultant.jpg"
-  alt="love_consultant"
-  title="love_consultant"
-  style="display: inline-block; margin: 0 auto; height: 600px">
-  <img
-  src="/img/love_consultant (2).jpg"
-  alt="love_consultant (2)"
-  title="love_consultant (2)"
-  style="display: inline-block; margin: 0 auto; height: 600px">  
+  src="/img/love_consultant_same.png"
+  alt="love_consultant_same"
+  title="love_consultant_same"
+  style="display: inline-block; margin: 0 auto; width: 600px">  
   * 每支帳號的結果皆獨立  
   <img
   src="/img/result_same01.png"
@@ -108,15 +107,10 @@
 * **pair** `戀人配對`
   * 輸入`戀愛相談`後，再選擇或輸入您的性別，Mami就會使用**網路爬蟲**幫您尋找一名對象  
   <img
-  src="/img/pair0.jpg"
+  src="/img/pair0.png"
   alt="pair0"
   title="pair0"
-  style="display: inline-block; margin: 0 auto; height: 600px">
-  <img
-  src="/img/pair_boy1.jpg"
-  alt="pair_boy1"
-  title="pair_boy1"
-  style="display: inline-block; margin: 0 auto; height: 600px">  
+  style="display: inline-block; margin: 0 auto; width: 600px">  
   * 選擇或輸入`匹配度分析`，Mami會為您與此對象進行*戀愛相談*分析  
   <img
   src="/img/pair_boy2.jpg"
@@ -132,15 +126,10 @@
   style="display: inline-block; margin: 0 auto; width: 400px">  
   * 無論是否有進行*戀愛相談*分析，選擇或輸入`獲取圖片`，Mami會傳給您此對象之圖片供您下載  
   <img
-  src="/img/pair_boy3.jpg"
-  alt="pair_boy3"
-  title="pair_boy3"
-  style="display: inline-block; margin: 0 auto; width: 400px">
-  <img
-  src="/img/pair_download.jpg"
-  alt="pair_download"
-  title="pair_download"
-  style="display: inline-block; margin: 0 auto; width: 400px">  
+  src="/img/pair_download_pic.png"
+  alt="pair_download_pic"
+  title="pair_download_pic"
+  style="display: inline-block; margin: 0 auto; width: 600px">  
   * 當然Mami也會為女性尋找對象  
   （圖片）  
   * 輸入`戀人配對`後，若輸入`男`、`女`以外的回應，Mami會生氣  
@@ -175,6 +164,6 @@
   （圖片）  
   * 相談（そうだん、soudan）為日文「諮詢」的意思  
 > 作者：成功大學資訊工程學系113級 鄭鈞智  
-> 最後編輯： 2022/12/16 00:59
+> 最後編輯： 2022/12/16 01:14
 
 
