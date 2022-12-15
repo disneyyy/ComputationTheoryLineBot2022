@@ -61,10 +61,19 @@
   title="pair_boy1"
   style="display: inline-block; margin: 0 auto; height: 600px">  
   * 選擇或輸入`匹配度分析`，Mami會為您與此對象進行**戀愛相談**分析  
-  （圖片）  
-  * 無論是否有進行*戀愛相談*分析，選擇或輸入`再試一次`，Mami會依據您剛剛選擇的性別，再次尋找對象  
-  （圖片）  
-  * 無論是否有進行*戀愛相談*分析，選擇或輸入`獲取圖片`，Mami會傳給您此對象之圖片供您下載
+    <img
+  src="/img/pair_boy2.jpg"
+  alt="pair_boy2"
+  title="pair_boy2"
+  style="display: inline-block; margin: 0 auto; width: 400px">
+    * 進行*戀愛相談*分析後，選擇或輸入`再試一次`，戀人配對功能從頭開始  
+  * 選擇或輸入`再試一次`，  
+  * 無論是否有進行*戀愛相談*分析，選擇或輸入`獲取圖片`，Mami會傳給您此對象之圖片供您下載  
+  <img
+  src="/img/pair_boy3.jpg"
+  alt="pair_boy3"
+  title="pair_boy3"
+  style="display: inline-block; margin: 0 auto; width: 400px">
   （圖片）  
   * 當然Mami也會為女性尋找對象  
   （圖片）  
