@@ -145,7 +145,7 @@
 
 * **mad**  `和也` `木之下和也` `Kazuya`  
   在任何時候輸入`和也`、`木之下和也`、`Kazuya`，Mami會進入*mad*狀態，會揭露她的本性（共4種回覆，如左圖）  
-  ![kazuya_all](./img/kazuya_all.png)  
+  ![kazuya_all](./img/kazuya_all2.png)  
   **（紅色塗鴉為骯髒字眼，慎入！！！）**  
 * **pride**  
   在*戀愛相談*狀態時，如果輸入的名字為`麻美`、`七海麻美`、`Mami`、`Nanami Mami`、`まみ`、`ななみまみ`、`マミ`、`ナナミマミ`，Mami會進入*pride*狀態，會狠狠的打槍您（共2種回覆）  
