@@ -14,6 +14,8 @@
 ## Finite State Machine
 ![fsm](./img/fsm.png)
 
+## 加入好友
+![friend](./img/add_friend.jpg)  
 ## 功能
 * **歡迎訊息**  
 <img
