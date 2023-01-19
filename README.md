@@ -16,6 +16,7 @@
 
 ## 加入好友
 ![friend](./img/add_friend.jpg)  
+當前狀態：`offline`  
 ## 功能
 * **歡迎訊息**  
 <img
