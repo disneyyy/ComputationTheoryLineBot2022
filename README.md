@@ -7,9 +7,10 @@ Birthday：11月13日
 Zodiac Sign：Scorpio  
 Voice Actor：悠木碧  
 + Nanami Mami is a character from manga "Rent-A-Girlfriend" (Japanese: 彼女、お借りします).  
-+ A freshman in Nerima University(練馬大學), had been Kazuya's girlfriend for a month (In fact she thought was just for fun), after than she broke up with Kazuya. + Has a cute and approachable appearance. In fact Mami is a b*tch that get jealous easily.  
-+ Due to her wealthy but mean family, her favorite doll was abandoned when she was little. Also, she was forced to broke up with her ex-boyfriend (not Kazuya). So, Mami became scheming and **wished to destroy all couples' relationships**.
-+ Mami is the only character that can make progress of this manga. If Mami doesn't appear in the latest chapter, that means you can skip all the story this week. This manga has no progress in story since chapter 140, however, the lastest episode is chapter 260 (2022/12/15)
++ A freshman in Nerima University(練馬大學), had been Kazuya's girlfriend for a month (In fact she thought it was just for fun), after that she broke up with Kazuya.
++ Mami has a cute and approachable appearance. In fact Mami is a b*tch that gets jealous easily.  
++ Mami grown up in a wealthy but mean family. Since her favorite doll was abandoned when she was little and she was forced to broke up with her ex-boyfriend (not Kazuya), Mami became scheming and **wished to destroy all couples' relationships**.
++ Mami is the only character that can make progress in this manga. If Mami doesn't appear in the latest chapter, that means you can skip all the story this week. This manga has no progress in story since chapter 140, however, the lastest episode is chapter 260 (2022/12/15)
 
 ## Finite State Machine
 ![fsm](./img/fsm.png)
@@ -25,10 +26,10 @@ Current State：`offline`
   title="welcome"
   style="display: inline-block; margin: 0 auto; width: 400px">  
 * **user**
-  * `help`，Mami會貼心的告訴您她提供的服務項目  
-  * 輸入`戀愛相談`，Mami會為您進行戀愛諮商
-  * 輸入`戀人配對`，Mami會依您的生理性別為您尋找對象，還可以進一步作匹配度分析  
-  * 輸入`獲取圖片`，即可以索取前一次`戀人配對`結果的照片
+  * `help`，Mami will tell you all services she offers.  
+  * `戀愛相談`，Mami will help give you a love consulation.  
+  * `戀人配對`，Mami will recommend you the best matched person. You can also forward to score matching point between you and recommend person.  
+  * `獲取圖片`，即可以索取前一次`戀人配對`結果的照片
   * 輸入其他指令，Mami會進入*idle*狀態，會隨機回覆一則訊息
 * **help**  
 <img
