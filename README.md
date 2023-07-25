@@ -1,31 +1,31 @@
 # Line Bot Nanami Mami the Love Consultant
 
-## 角色介紹
+## Character Introduction
 ![Mami](./img/Mami_profile2.png)
-### 七海麻美
-生日：11月13日  
-星座：天蠍座  
-聲優：悠木碧  
-+ 七海麻美是由宮島禮吏創作的漫畫《出租女友》及其衍生作品的登場角色。  
-+ 練馬大學一年級生，曾與木之下和也交往一個月（實際上是隨便答應的），隨後爽快地甩了他。表面上性格爽朗，實際上極度腹黑且善妒。  
-+ 是個家教嚴格的大小姊。因為小時候最心愛的娃娃被父親丟棄，以及被迫與喜歡的對象分手，造就了麻美腹黑的性格，**願景是拆散世界上所有的情侶**。  
-+ 本作唯一劇情推進擔當，沒有麻美沒有劇情進度，大約140話以後劇情進度開始停滯不前，然而現在已經畫到260幾話了（2022/12/15）
+### 七海麻美 (Nanami Mami)
+Birthday：11月13日  
+Zodiac Sign：Scorpio  
+Voice Actor：悠木碧  
++ Nanami Mami is a character from manga "Rent-A-Girlfriend" (Japanese: 彼女、お借りします).  
++ A freshman in Nerima University(練馬大學), had been Kazuya's girlfriend for a month (In fact she thought was just for fun), after than she broke up with Kazuya. + Has a cute and approachable appearance. In fact Mami is a b*tch that get jealous easily.  
++ Due to her wealthy but mean family, her favorite doll was abandoned when she was little. Also, she was forced to broke up with her ex-boyfriend (not Kazuya). So, Mami became scheming and **wished to destroy all couples' relationships**.
++ Mami is the only character that can make progress of this manga. If Mami doesn't appear in the latest chapter, that means you can skip all the story this week. This manga has no progress in story since chapter 140, however, the lastest episode is chapter 260 (2022/12/15)
 
 ## Finite State Machine
 ![fsm](./img/fsm.png)
 
-## 加入好友
+## Add Friend
 ![friend](./img/add_friend.jpg)  
-當前狀態：`offline`  
-## 功能
-* **歡迎訊息**  
+Current State：`offline`  
+## Usages
+* **Welcome Message**  
 <img
   src="/img/welcom.jpg"
   alt="welcome"
   title="welcome"
   style="display: inline-block; margin: 0 auto; width: 400px">  
 * **user**
-  * 輸入`help`，Mami會貼心的告訴您她提供的服務項目  
+  * `help`，Mami會貼心的告訴您她提供的服務項目  
   * 輸入`戀愛相談`，Mami會為您進行戀愛諮商
   * 輸入`戀人配對`，Mami會依您的生理性別為您尋找對象，還可以進一步作匹配度分析  
   * 輸入`獲取圖片`，即可以索取前一次`戀人配對`結果的照片
